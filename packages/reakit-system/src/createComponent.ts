@@ -87,6 +87,7 @@ export function createComponent<T extends As, O>({
 
   if (process.env.NODE_ENV !== "production" && useHook) {
     Comp.displayName = useHook.name.replace(/^(unstable_)?use/, "");
+    console.log("production");
   }
 
   Comp = forwardRef(Comp);
