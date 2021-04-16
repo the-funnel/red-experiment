@@ -1,5 +1,6 @@
 import React from "react";
 import { unstable_useId as useId } from "reakit/Id";
+
 export type StateContext<O> = React.Context<StateContextValue<O>>;
 export type StateContextValue<O> = {
   initialState: O;
