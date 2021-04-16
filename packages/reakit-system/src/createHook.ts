@@ -107,6 +107,7 @@ export function createHook<O, P>(options: CreateHookOptions<O, P>) {
     return finalHTMLProps;
   };
 
+  // TODO: Provide explanation of the line below
   useHook.__useOptions = __useOptions;
 
   const composedKeys = composedHooks.reduce((keys, hook) => {
