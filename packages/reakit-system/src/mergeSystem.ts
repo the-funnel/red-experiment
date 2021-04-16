@@ -21,6 +21,7 @@ function mergeFunctionsInObjects(objects: Array<Record<string, any>>) {
   return result;
 }
 
+// TODO: Write tests for this one
 function mergeObjectsInObjects(systems: Array<Record<string, any>>) {
   const object = reduceObjects(systems, isObject);
   const keys = Object.keys(object);
