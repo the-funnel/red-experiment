@@ -23,7 +23,6 @@ export function blur(element?: DirtiableElement | null) {
   if (element.dirty) {
     fireEvent.change(element);
     element.dirty = false;
-    console.log("element");
   }
 
   act(() => {
