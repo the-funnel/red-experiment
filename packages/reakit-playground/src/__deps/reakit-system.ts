@@ -2,6 +2,7 @@
 // Automatically generated
 export default {
   "reakit-system": require("reakit-system"),
+  "reakit-system/StateContextHoc": require("reakit-system/StateContextHoc"),
   "reakit-system/SystemContext": require("reakit-system/SystemContext"),
   "reakit-system/SystemProvider": require("reakit-system/SystemProvider"),
   "reakit-system/createComponent": require("reakit-system/createComponent"),
