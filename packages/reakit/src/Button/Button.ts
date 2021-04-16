@@ -34,7 +34,6 @@ export const useButton = createHook<ButtonOptions, ButtonHTMLProps>({
       if (!isButton(element)) {
         if (element.tagName !== "A") {
           setRole("button");
-          console.log("button");
         }
         setType(undefined);
       }
