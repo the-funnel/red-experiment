@@ -32,12 +32,11 @@ export const useBox = createHook<BoxOptions, BoxHTMLProps>({
     const { unstable_system: nextSystem, ...nextProps } = next;
     if (prevSystem !== nextSystem && !shallowEqual(prevSystem, nextSystem)) {
       return false;
-    } else {
-      console.log("add new line here");
-      const obj = {"name": "Ronan"};
-      console.log(obj);
-      return shallowEqual(prevProps, nextProps);
     }
+    console.log("add new line here");
+    const obj = {name: "Ronan"};
+    console.log(obj);
+    return shallowEqual(prevProps, nextProps);
   },
 });
 
