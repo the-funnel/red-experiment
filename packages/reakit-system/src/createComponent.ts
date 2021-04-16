@@ -100,7 +100,6 @@ export function createComponent<T extends As, O>({
   Comp.unstable_propsAreEqual = normalizePropsAreEqual(
     propsAreEqual || shallowEqual
   );
-   
   // TODO: define function's return type
 
   return Comp;
