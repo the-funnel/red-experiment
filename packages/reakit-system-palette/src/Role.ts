@@ -22,6 +22,7 @@ export function useRoleProps(
 
   if (textColor) {
     style.color = textColor;
+    console.log("style");
   }
   if (backgroundColor) {
     style.backgroundColor = backgroundColor;
