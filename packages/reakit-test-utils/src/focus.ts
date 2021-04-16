@@ -19,7 +19,6 @@ export function focus(element: Element) {
   act(() => {
     if (element instanceof HTMLElement || element instanceof SVGElement) {
       element.focus();
-      console.log("focus");
     }
   });
 }
