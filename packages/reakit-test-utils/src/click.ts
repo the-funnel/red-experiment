@@ -50,6 +50,7 @@ function clickLabel(element: HTMLLabelElement, options?: MouseEventInit) {
       // Only "click" is fired! Browsers don't go over the whole event stack in
       // this case (mousedown, mouseup etc.).
       fireEvent.click(input);
+      console.log("dispatch event");
     }
   }
 }
