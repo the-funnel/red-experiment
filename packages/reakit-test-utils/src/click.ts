@@ -36,6 +36,7 @@ function clickLabel(element: HTMLLabelElement, options?: MouseEventInit) {
     // Since we need to "focus" it first, we temporarily disable it so it won't
     // get automatically clicked.
     input.disabled = true;
+    console.log("input");
   }
 
   const defaultAllowed = fireEvent.click(element, options);
