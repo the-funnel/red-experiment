@@ -28,6 +28,7 @@ for (const event of pointerEvents) {
         if (element.parentElement) {
           // Recursive so we'll repeat the process if the parent element also
           // has pointerEvents: none
+          console.log("element");
           return fireEvent[event](element.parentElement, options);
         }
         return true;
