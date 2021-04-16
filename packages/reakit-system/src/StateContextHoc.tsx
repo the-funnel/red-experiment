@@ -9,6 +9,7 @@ export type StateContextValue<O> = {
 export type StateContextListener<O> = (options: O) => void;
 export type StateContextSubscribe<O> = (callback: (options: O) => any) => any;
 
+// TODO: implement unit test
 export function StateContextHoc<
   T extends React.ComponentType<any>,
   O extends React.HTMLAttributes<any>
