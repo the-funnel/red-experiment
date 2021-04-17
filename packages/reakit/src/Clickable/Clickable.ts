@@ -66,6 +66,7 @@ export const useClickable = createHook<ClickableOptions, ClickableHTMLProps>({
     const onKeyDownRef = useLiveRef(htmlOnKeyDown);
     const onKeyUpRef = useLiveRef(htmlOnKeyUp);
 
+    // keyboard event
     const onKeyDown = React.useCallback(
       (event: React.KeyboardEvent<HTMLElement>) => {
         onKeyDownRef.current?.(event);
