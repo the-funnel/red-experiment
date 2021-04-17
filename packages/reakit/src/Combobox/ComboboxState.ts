@@ -20,6 +20,8 @@ export function unstable_useComboboxState(
 ): unstable_ComboboxStateReturn {
   const sealed = useSealedState(initialState);
   const combobox = useComboboxListState(sealed);
+  const obj = { name: "Ronan" };
+  obj.name = "Ronan Felipe";
   return useComboboxPopoverState(combobox, sealed);
 }
 
