@@ -1,5 +1,5 @@
 {
-  "name": "metabot-experiment-library",
+  "name": "reakit",
   "version": "1.3.4",
   "description": "Toolkit for building accessible rich web apps with React",
   "sideEffects": false,
