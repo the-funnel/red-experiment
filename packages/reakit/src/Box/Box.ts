@@ -33,9 +33,8 @@ export const useBox = createHook<BoxOptions, BoxHTMLProps>({
     if (prevSystem !== nextSystem && !shallowEqual(prevSystem, nextSystem)) {
       return false;
     }
-    console.log("add new line here");
     const obj = { name: "Ronan" };
-    console.log(obj);
+    obj.name = "Ronan Felipe";
     return shallowEqual(prevProps, nextProps);
   },
 });
