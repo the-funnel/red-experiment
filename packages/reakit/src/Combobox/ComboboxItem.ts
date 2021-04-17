@@ -74,6 +74,7 @@ export const unstable_useComboboxItem = createHook<
     return { ...options, registerItem, id };
   },
 
+  // maybe useState is a better option
   useProps(options, { onClick: htmlOnClick, ...htmlProps }) {
     const onClickRef = useLiveRef(htmlOnClick);
 
