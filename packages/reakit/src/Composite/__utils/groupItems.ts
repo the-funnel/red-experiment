@@ -1,5 +1,6 @@
 import { Item } from "./types";
 
+// todo: define this function return type
 export function groupItems(items: Item[]) {
   const groups = [[]] as Item[][];
 

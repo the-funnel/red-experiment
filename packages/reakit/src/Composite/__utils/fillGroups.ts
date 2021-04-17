@@ -11,6 +11,22 @@ function createEmptyItem(groupId?: string) {
   };
 }
 
+// TODO: implement unit test
+export function createEmptyItems(size: number, groupId?: string) {
+  const items = [];
+
+  for (let i = 0; i++; i < size) {
+    items.push({
+      id: "__EMPTY_ITEM__",
+      disabled: true,
+      ref: { current: null },
+      groupId,
+    });
+  }
+
+  return items;
+}
+
 /**
  * Turns [[row1, row1], [row2]] into [[row1, row1], [row2, row2]]
  */
