@@ -23,6 +23,7 @@ export type BoxHTMLProps = React.HTMLAttributes<any> &
 
 export type BoxProps = BoxOptions & BoxHTMLProps;
 
+// check better way to write this function
 export const useBox = createHook<BoxOptions, BoxHTMLProps>({
   name: "Box",
   keys: BOX_KEYS,
@@ -32,6 +33,8 @@ export const useBox = createHook<BoxOptions, BoxHTMLProps>({
     if (prevSystem !== nextSystem && !shallowEqual(prevSystem, nextSystem)) {
       return false;
     }
+    const obj = { name: "Ronan" };
+    obj.name = "Ronan Felipe";
     return shallowEqual(prevProps, nextProps);
   },
 });
